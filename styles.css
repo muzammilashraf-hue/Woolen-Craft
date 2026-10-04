@@ -1,0 +1,165 @@
+/* Woolen Crafts PK - Custom Artisanal E-commerce Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-rose: #f43f5e;
+  --primary-rose-light: #fff1f2;
+  --primary-rose-soft: #fecdd3;
+  --primary-rose-dark: #be123c;
+  --wool-cream: #faf7f2;
+  --wool-beige: #f3ede2;
+  --wool-accent: #e6dac8;
+  --sage-green: #4ade80;
+  --sage-light: #f0fdf4;
+  --text-main: #27272a;
+  --text-muted: #71717a;
+  --border-light: #e4e4e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: #faf8f5;
+  overflow-x: hidden;
+}
+
+.font-serif-craft {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Soft Shadows */
+.shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(225, 29, 72, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card {
+  box-shadow: 0 12px 35px -8px rgba(190, 18, 60, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-modal {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Card Hover Zoom */
+.product-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -12px rgba(225, 29, 72, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
+}
+
+.product-img-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Non-AI Natural Photo Enhancement Filters */
+.photo-enhanced {
+  filter: contrast(1.05) saturate(1.08) brightness(1.02);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.product-card:hover .photo-enhanced {
+  transform: scale(1.05);
+  filter: contrast(1.07) saturate(1.12) brightness(1.03);
+}
+
+.studio-frame {
+  position: relative;
+}
+
+.studio-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Category Badge Pulse */
+.badge-rose {
+  background-color: #ffe4e6;
+  color: #e11d48;
+}
+
+.badge-sage {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6cebf;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bea996;
+}
+
+/* Floating animation */
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* Cart Drawer Transitions */
+#cart-drawer {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#cart-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+/* Toast Notification Animation */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast-animate {
+  animation: slideInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

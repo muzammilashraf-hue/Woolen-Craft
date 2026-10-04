@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woolen Crafts PK (@woolencrafts_pk) | Handmade Crochet & Knitwear Boutique</title>
+  <meta name="description" content="Every stitch be a tale of adventure. Shop handmade forever flowers, crochet totes, keyrings, and sweaters handcrafted in Pakistan. Custom orders and bulk orders available.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rose: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+            },
+            wool: {
+              50: '#faf8f5',
+              100: '#f5f0e8',
+              200: '#ebe1d3',
+              300: '#dcceba',
+              800: '#3c352d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/forever-flowers.jpg" type="image/jpeg">
+</head>
+<body class="bg-[#faf8f5] text-stone-800 antialiased selection:bg-rose-100 selection:text-rose-700">
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 text-center border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 font-medium">
+      <span class="inline-flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+        <span>✨ <strong>FREE Nationwide Delivery</strong> across Pakistan on orders over ₨ 3,500</span>
+      </span>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <span class="hidden md:inline text-stone-300">💌 Customization & Bulk Event Orders Available</span>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="hover:text-rose-400 underline underline-offset-2 transition">
+        Follow @woolencrafts_pk
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. Sticky Glass Navbar -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-stone-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo & Instagram Tagline -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-rose-500 to-amber-300 p-0.5 shadow-sm group-hover:scale-105 transition">
+          <div class="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+            <span class="text-xl">🌸</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <h1 class="text-xl font-bold tracking-tight text-stone-900 font-serif-craft">Woolen Crafts</h1>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700">PK 🇵🇰</span>
+          </div>
+          <p class="text-[11px] text-stone-500 font-medium italic">Every stitch be a tale of adventure 🩷</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-stone-600">
+        <a href="#shop" class="hover:text-rose-600 transition">Shop Catalog</a>
+        <a href="#categories" class="hover:text-rose-600 transition">Collections</a>
+        <a href="#custom-orders" class="text-rose-600 hover:text-rose-700 transition flex items-center gap-1">
+          <span>Custom Orders 💌</span>
+        </a>
+        <a href="#reviews" class="hover:text-rose-600 transition">Customer Love</a>
+        <a href="#care-guide" class="hover:text-rose-600 transition">Care Guide</a>
+      </nav>
+
+      <!-- Right Actions: Search Trigger, WhatsApp Direct, Cart Button -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Direct WhatsApp Chat -->
+        <a 
+          href="https://wa.me/923001234567?text=Salam%20Woolen%20Crafts%20PK!%20I%20have%20an%20inquiry%20regarding%20your%20crochet%20products." 
+          target="_blank"
+          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition"
+        >
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <!-- Shopping Cart Trigger Button -->
+        <button 
+          id="cart-toggle-btn"
+          class="relative p-2.5 rounded-xl bg-stone-900 text-white hover:bg-rose-600 transition flex items-center gap-2 shadow-sm"
+          aria-label="Open Shopping Bag"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span class="hidden sm:inline text-xs font-semibold tracking-wide">Bag</span>
+          <span 
+            id="cart-badge" 
+            class="hidden w-5 h-5 rounded-full bg-rose-500 text-white text-[11px] font-bold flex items-center justify-center -top-1 -right-1"
+          >0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-stone-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-50 border border-rose-200/70 text-rose-700 text-xs font-semibold shadow-sm">
+              <span>🧶 Artisanal Crochet & Knitwear</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              <span>Based in Pakistan 🇵🇰</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight font-serif-craft leading-[1.15]">
+              Forever Flowers & <br>
+              <span class="text-rose-600 italic font-normal">Handcrafted Heirlooms</span> <br>
+              Woven for Life.
+            </h1>
+
+            <p class="text-stone-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Every single stitch tells a story. From forever blooming crochet bouquets that never wilt, to bohemian granny-square totes and cozy cable cardigans.
+            </p>
+
+            <!-- Instagram Bio Tag Callout -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1 text-xs text-stone-600">
+              <span class="px-3 py-1 bg-stone-100 rounded-lg font-medium border border-stone-200/60">🌸 Forever Flowers</span>
+              <span class="px-3 py-1 bg-stone-100 rounded-lg font-medium border border-stone-200/60">👜 Totes & Bags</span>
+              <span class="px-3 py-1 bg-stone-100 rounded-lg font-medium border border-stone-200/60">🍓 Cute Keyrings</span>
+              <span class="px-3 py-1 bg-stone-100 rounded-lg font-medium border border-stone-200/60">🧶 Sweaters</span>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+              <a 
+                href="#shop" 
+                class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-900 hover:bg-rose-600 text-white font-semibold text-sm tracking-wide transition shadow-md flex items-center justify-center gap-2 group"
+              >
+                <span>Shop Collection</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a 
+                href="#custom-orders" 
+                class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-rose-50 text-stone-800 hover:text-rose-600 border border-stone-300 font-semibold text-sm tracking-wide transition flex items-center justify-center gap-2"
+              >
+                <span>Request Custom Order 💌</span>
+              </a>
+            </div>
+
+            <!-- Trust Highlights -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-stone-200/80 text-left max-w-lg mx-auto lg:mx-0">
+              <div>
+                <p class="text-xl sm:text-2xl font-bold text-stone-900">3,200+</p>
+                <p class="text-[11px] text-stone-500 font-medium">Insta Community</p>
+              </div>
+              <div>
+                <p class="text-xl sm:text-2xl font-bold text-stone-900">100%</p>
+                <p class="text-[11px] text-stone-500 font-medium">Handmade in PK</p>
+              </div>
+              <div>
+                <p class="text-xl sm:text-2xl font-bold text-stone-900">COD</p>
+                <p class="text-[11px] text-stone-500 font-medium">All Cities Available</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Collage -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Backdrop Aura -->
+              <div class="absolute -top-10 -left-10 w-72 h-72 bg-rose-200/50 rounded-full blur-3xl -z-10"></div>
+              <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-amber-200/40 rounded-full blur-3xl -z-10"></div>
+
+              <!-- Main Hero Image Frame -->
+              <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white aspect-[4/5] relative group">
+                <img 
+                  src="images/forever-flowers.jpg" 
+                  alt="Woolen Crafts Forever Flowers Bouquet" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[11px] font-bold tracking-wide uppercase">
+                    Signature Creation
+                  </span>
+                  <h3 class="text-xl font-bold font-serif-craft mt-2">Everlasting Pastel Tulip Bouquet</h3>
+                  <p class="text-xs text-white/80 mt-0.5">Custom bouquet orders made-to-measure for your special occasions.</p>
+                </div>
+              </div>
+
+              <!-- Floating Mini Card -->
+              <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-stone-200/80 flex items-center gap-3 animate-float hidden sm:flex">
+                <img src="images/keyrings.jpg" alt="Amigurumi keyrings" class="w-12 h-12 rounded-xl object-cover" />
+                <div>
+                  <p class="text-xs font-bold text-stone-900">Handmade Amigurumi</p>
+                  <p class="text-[11px] text-rose-600 font-medium">Starting from ₨ 1,400</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Collections Category Section -->
+    <section id="categories" class="py-16 bg-white border-b border-stone-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-600">Curated Categories</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-serif-craft mt-1">Explore by Specialty</h2>
+          <p class="text-xs sm:text-sm text-stone-500 mt-2">Browse the handcrafted crafts showcased on our official Instagram feed.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          
+          <!-- Category 1: Flowers -->
+          <div 
+            onclick="selectCategoryFilter('flowers')"
+            class="group cursor-pointer rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/80 hover:border-rose-300 transition-all hover:-translate-y-1 shadow-sm"
+          >
+            <div class="aspect-square overflow-hidden bg-stone-200">
+              <img src="images/sunflower-bouquet.jpg" alt="Forever flowers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="font-bold text-stone-800 text-sm group-hover:text-rose-600 transition">Forever Flowers</h3>
+              <p class="text-[11px] text-stone-400 mt-0.5">Tulips, Sunflowers, Daisies</p>
+            </div>
+          </div>
+
+          <!-- Category 2: Bags -->
+          <div 
+            onclick="selectCategoryFilter('bags')"
+            class="group cursor-pointer rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/80 hover:border-rose-300 transition-all hover:-translate-y-1 shadow-sm"
+          >
+            <div class="aspect-square overflow-hidden bg-stone-200">
+              <img src="images/crochet-tote.jpg" alt="Totes and bags" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="font-bold text-stone-800 text-sm group-hover:text-rose-600 transition">Totes & Bags</h3>
+              <p class="text-[11px] text-stone-400 mt-0.5">Granny Squares & Dumplings</p>
+            </div>
+          </div>
+
+          <!-- Category 3: Keyrings -->
+          <div 
+            onclick="selectCategoryFilter('keyrings')"
+            class="group cursor-pointer rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/80 hover:border-rose-300 transition-all hover:-translate-y-1 shadow-sm"
+          >
+            <div class="aspect-square overflow-hidden bg-stone-200">
+              <img src="images/boba-keychain.jpg" alt="Keyrings" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="font-bold text-stone-800 text-sm group-hover:text-rose-600 transition">Keyrings & Charms</h3>
+              <p class="text-[11px] text-stone-400 mt-0.5">Amigurumi, Boba & Bears</p>
+            </div>
+          </div>
+
+          <!-- Category 4: Sweaters -->
+          <div 
+            onclick="selectCategoryFilter('sweaters')"
+            class="group cursor-pointer rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/80 hover:border-rose-300 transition-all hover:-translate-y-1 shadow-sm"
+          >
+            <div class="aspect-square overflow-hidden bg-stone-200">
+              <img src="images/knit-sweater.jpg" alt="Sweaters" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="font-bold text-stone-800 text-sm group-hover:text-rose-600 transition">Cozy Sweaters</h3>
+              <p class="text-[11px] text-stone-400 mt-0.5">Hand-knit Chunky Cardigans</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Main Shop Catalog -->
+    <section id="shop" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Catalog Header & Controls -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 pb-6 border-b border-stone-200">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-600">Complete Shop</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-serif-craft mt-1">Handmade Catalog</h2>
+          <p id="products-count" class="text-xs text-stone-500 mt-1">Showing 8 handcrafted items</p>
+        </div>
+
+        <!-- Search & Sort Controls -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <!-- Live Search Bar -->
+          <div class="relative min-w-[240px]">
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Search flowers, totes, sweaters..." 
+              class="w-full text-xs pl-9 pr-4 py-2.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:border-rose-500 transition shadow-sm"
+            />
+            <svg class="w-4 h-4 text-stone-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+
+          <!-- Sort Selector -->
+          <select 
+            id="sort-select" 
+            class="text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 bg-white focus:outline-none focus:border-rose-500 transition shadow-sm font-medium text-stone-700 cursor-pointer"
+          >
+            <option value="featured">Featured First</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Filter Buttons Pill Row -->
+      <div class="flex flex-wrap items-center gap-2 mb-8">
+        <button data-category="all" class="category-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-rose-500 text-white transition shadow-sm">
+          All Products
+        </button>
+        <button data-category="flowers" class="category-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-stone-600 border border-stone-200 hover:border-rose-300 transition">
+          Forever Flowers 🌸
+        </button>
+        <button data-category="bags" class="category-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-stone-600 border border-stone-200 hover:border-rose-300 transition">
+          Totes & Bags 👜
+        </button>
+        <button data-category="keyrings" class="category-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-stone-600 border border-stone-200 hover:border-rose-300 transition">
+          Keyrings 🍓
+        </button>
+        <button data-category="sweaters" class="category-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-stone-600 border border-stone-200 hover:border-rose-300 transition">
+          Sweaters 🧶
+        </button>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+    </section>
+
+    <!-- 6. Custom Orders & Bulk Gifting Section -->
+    <section id="custom-orders" class="py-16 sm:py-24 bg-gradient-to-b from-[#faf8f5] to-rose-50/60 border-t border-stone-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text Info -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-semibold">
+              💌 Straight from our Instagram Bio
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 font-serif-craft leading-tight">
+              Customization Available & <br>
+              <span class="text-rose-600">Bulk Gifting Favors</span>
+            </h2>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Looking for a custom color palette to match your wedding decor, bridesmaid gift boxes, birthday celebrations, or corporate giveaways? We take customized orders and bulk requests with tailored wrapping, name tags, and discount rates.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-rose-500 text-white flex items-center justify-center shrink-0 text-xs font-bold">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-800">Custom Colors & Flower Combinations</h4>
+                  <p class="text-[11px] text-stone-500">Pick any yarn shades, bouquet size, or wrap ribbon color.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-rose-500 text-white flex items-center justify-center shrink-0 text-xs font-bold">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-800">Wedding & Event Bulk Favors</h4>
+                  <p class="text-[11px] text-stone-500">Handcrafted keyrings or mini bouquets as memorable favors for your guests.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-rose-500 text-white flex items-center justify-center shrink-0 text-xs font-bold">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-stone-800">Personalized Gift Cards Included</h4>
+                  <p class="text-[11px] text-stone-500">Every gift parcel can include your handwritten message card.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-rose-200/80 shadow-sm flex items-center gap-4">
+              <div class="text-2xl">⚡</div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Direct WhatsApp Customization Helpline</p>
+                <p class="text-[11px] text-stone-500">Share your reference pictures or Pinterest mood board directly.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Request Form -->
+          <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-xl">
+            <h3 class="text-xl font-bold font-serif-craft text-stone-900 mb-1">Inquire About a Custom Order</h3>
+            <p class="text-xs text-stone-400 mb-6">Fill in details and send directly to our WhatsApp crafting team.</p>
+
+            <form id="custom-order-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-stone-700 mb-1">Your Name *</label>
+                  <input type="text" name="custom_name" required placeholder="Ayesha Khan" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-stone-700 mb-1">WhatsApp Number *</label>
+                  <input type="tel" name="custom_phone" required placeholder="0300 1234567" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-stone-700 mb-1">Order Type *</label>
+                  <select name="custom_type" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500 font-medium text-stone-700">
+                    <option value="Custom Bouquet Design">Custom Bouquet Design 🌸</option>
+                    <option value="Wedding / Nikkah Favors">Wedding / Nikkah Favors 💍</option>
+                    <option value="Bulk Event Favors">Bulk Event Favors (20+ pcs) 📌</option>
+                    <option value="Custom Bag or Tote">Custom Bag or Tote 👜</option>
+                    <option value="Personalized Sweater / Cardigan">Personalized Sweater / Cardigan 🧶</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-stone-700 mb-1">Estimated Quantity *</label>
+                  <input type="text" name="custom_qty" required placeholder="e.g. 1 piece or 50 favor pieces" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-stone-700 mb-1">Preferred Color Palette / Theme</label>
+                <input type="text" name="custom_palette" placeholder="e.g. Lavender & Peach, Pastel Pink & White, Autumn Ochre" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-stone-700 mb-1">Details & Special Instructions</label>
+                <textarea name="custom_notes" rows="3" placeholder="Tell us about the occasion, needed date, custom card notes, or specific flowers you desire..." class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500"></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs tracking-wide transition shadow-sm flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                <span>Send Custom Request on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Customer Reviews & Social Proof -->
+    <section id="reviews" class="py-16 bg-white border-b border-stone-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-600">Client Reviews</span>
+          <h2 class="text-3xl font-bold text-stone-900 font-serif-craft mt-1">Loved by Our Community</h2>
+          <p class="text-xs text-stone-500 mt-1">Real feedback from clients across Pakistan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200/70 space-y-4">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs text-stone-600 leading-relaxed italic">
+              "Ordered the pastel tulip bouquet for my best friend's bridal shower in Lahore. Everyone was stunned! It looks so realistic and knowing it will last forever makes it such a special keepsake."
+            </p>
+            <div class="flex items-center gap-3 pt-2 border-t border-stone-200">
+              <div class="w-8 h-8 rounded-full bg-rose-200 text-rose-800 font-bold text-xs flex items-center justify-center">M</div>
+              <div>
+                <p class="text-xs font-bold text-stone-800">Maryam Tariq</p>
+                <p class="text-[10px] text-stone-400">Lahore, Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200/70 space-y-4">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs text-stone-600 leading-relaxed italic">
+              "The granny square tote bag exceeded my expectations! The stitching is so neat, thick, and durable. I use it for university every day and get non-stop compliments on the colors."
+            </p>
+            <div class="flex items-center gap-3 pt-2 border-t border-stone-200">
+              <div class="w-8 h-8 rounded-full bg-amber-200 text-amber-800 font-bold text-xs flex items-center justify-center">Z</div>
+              <div>
+                <p class="text-xs font-bold text-stone-800">Zoya Ahmed</p>
+                <p class="text-[10px] text-stone-400">Karachi, Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200/70 space-y-4">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs text-stone-600 leading-relaxed italic">
+              "We placed a bulk order of 40 mini daisy and strawberry keyrings for our sister's mehendi favors. Delivered on time in Islamabad with beautiful custom tags! 10/10 service."
+            </p>
+            <div class="flex items-center gap-3 pt-2 border-t border-stone-200">
+              <div class="w-8 h-8 rounded-full bg-emerald-200 text-emerald-800 font-bold text-xs flex items-center justify-center">F</div>
+              <div>
+                <p class="text-xs font-bold text-stone-800">Fatima Noor</p>
+                <p class="text-[10px] text-stone-400">Islamabad, Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Care Guide -->
+    <section id="care-guide" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-stone-900 text-white rounded-3xl p-8 sm:p-12">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-400">Heirloom Quality</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif-craft mt-1">Caring for Your Woolen Crafts</h2>
+          <p class="text-xs sm:text-sm text-stone-400 mt-2">Our creations are crafted to last years. Here is how to keep them looking fresh and vibrant:</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+          <div class="p-4 rounded-2xl bg-stone-800/80 border border-stone-700/60">
+            <h4 class="text-sm font-bold text-rose-300">🌸 Forever Flowers</h4>
+            <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+              No water needed! Simply use a soft dry brush or a gentle cool hairdryer blow to dust off petals once a month.
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-stone-800/80 border border-stone-700/60">
+            <h4 class="text-sm font-bold text-rose-300">👜 Crochet Totes & Bags</h4>
+            <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+              Spot clean with mild soap and cold water. Lay flat on a clean towel to dry naturally to preserve shape.
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-stone-800/80 border border-stone-700/60">
+            <h4 class="text-sm font-bold text-rose-300">🧶 Sweaters & Cardigans</h4>
+            <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+              Hand wash gently in lukewarm water with wool detergent. Never wring or tumble dry; dry flat in shade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Instagram Lookbook Grid -->
+    <section class="py-16 bg-white border-t border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 mb-3">
+          <span class="text-xl">📸</span>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="text-sm font-bold text-stone-900 hover:text-rose-600 transition">
+            @woolencrafts_pk on Instagram
+          </a>
+        </div>
+        <p class="text-xs text-stone-400 max-w-md mx-auto mb-8">Tag us in your photos with #WoolenCraftsPK to be featured in our story!</p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/forever-flowers.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/crochet-tote.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/sunflower-bouquet.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/keyrings.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/knit-sweater.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+          <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="aspect-square rounded-xl overflow-hidden bg-stone-100 group relative block">
+            <img src="images/boba-keychain.jpg" alt="Insta Post" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">View Post</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Footer -->
+  <footer class="bg-stone-950 text-stone-300 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🌸</span>
+            <span class="text-xl font-bold font-serif-craft text-white">Woolen Crafts PK</span>
+          </div>
+          <p class="text-xs text-stone-400 max-w-sm leading-relaxed">
+            "Every stitch be a tale of adventure 🩷" — Independent Pakistani craft studio dedicated to bringing everlasting floral joy and artisanal handmade crochet fashion into your everyday life.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-rose-600 text-white flex items-center justify-center transition text-sm">
+              IG
+            </a>
+            <a href="https://wa.me/923001234567" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-emerald-600 text-white flex items-center justify-center transition text-sm">
+              WA
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li><a href="#shop" class="hover:text-rose-400 transition">All Products</a></li>
+            <li><a href="#categories" class="hover:text-rose-400 transition">Forever Flowers</a></li>
+            <li><a href="#categories" class="hover:text-rose-400 transition">Crochet Totes & Bags</a></li>
+            <li><a href="#custom-orders" class="hover:text-rose-400 transition">Bulk & Event Orders</a></li>
+            <li><a href="#care-guide" class="hover:text-rose-400 transition">Yarn Care Instructions</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Payment & Delivery (Pakistan)</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            We deliver nationwide across Pakistan (Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, Quetta, and all cities) via express courier.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2 text-[10px]">
+            <span class="px-2.5 py-1 bg-stone-800 rounded font-semibold text-stone-300">Cash on Delivery (COD)</span>
+            <span class="px-2.5 py-1 bg-stone-800 rounded font-semibold text-stone-300">JazzCash</span>
+            <span class="px-2.5 py-1 bg-stone-800 rounded font-semibold text-stone-300">EasyPaisa</span>
+            <span class="px-2.5 py-1 bg-stone-800 rounded font-semibold text-stone-300">Bank Transfer / Raast</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <p>© 2026 Woolen Crafts PK. All rights reserved. Handcrafted with 🩷 in Pakistan 🇵🇰</p>
+        <p>Instagram: <a href="https://www.instagram.com/woolencrafts_pk" target="_blank" class="text-rose-400 hover:underline">@woolencrafts_pk</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 11. Slide-out Cart Drawer -->
+  <div id="cart-backdrop" class="fixed inset-0 bg-black/50 z-50 hidden opacity-0 transition-opacity"></div>
+  
+  <div 
+    id="cart-drawer" 
+    class="fixed top-0 right-0 bottom-0 w-full sm:w-[420px] bg-white z-50 shadow-2xl flex flex-col translate-x-full transition-transform duration-300"
+  >
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-stone-200 flex items-center justify-between bg-stone-50">
+      <div class="flex items-center gap-2">
+        <h3 class="text-base font-bold text-stone-900 font-serif-craft">Your Shopping Bag</h3>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 font-semibold">🇵🇰 PKR</span>
+      </div>
+      <button id="close-cart-btn" class="p-2 text-stone-400 hover:text-stone-800 rounded-lg transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Free shipping ticker -->
+    <div class="bg-rose-50 px-5 py-2.5 border-b border-rose-100 text-[11px] text-stone-700 text-center font-medium" id="free-shipping-progress">
+      Add items to enjoy <span class="text-rose-600 font-semibold">Free Shipping</span> on orders over ₨ 3,500
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-4">
+      <!-- Populated dynamically by app.js -->
+    </div>
+
+    <!-- Drawer Footer & Checkout Controls -->
+    <div class="p-5 border-t border-stone-200 bg-stone-50/80 space-y-3">
+      <!-- Promo code field -->
+      <div class="flex gap-2">
+        <input 
+          type="text" 
+          id="promo-code-input" 
+          placeholder="Promo code (Try WOOLEN10)" 
+          class="flex-1 text-xs px-3 py-2 border border-stone-300 rounded-xl focus:outline-none focus:border-rose-500 uppercase"
+        />
+        <button 
+          id="apply-promo-btn" 
+          class="px-3 py-2 bg-stone-200 hover:bg-stone-300 text-stone-800 rounded-xl text-xs font-semibold transition"
+        >
+          Apply
+        </button>
+      </div>
+
+      <!-- Cost Breakdown -->
+      <div class="space-y-1.5 text-xs text-stone-600 pt-2 border-t border-stone-200">
+        <div class="flex justify-between"><span>Subtotal:</span><span id="cart-subtotal" class="font-semibold text-stone-900">₨ 0</span></div>
+        <div id="cart-discount-row" class="flex justify-between text-emerald-600 hidden"><span>Discount:</span><span id="cart-discount-amount">-₨ 0</span></div>
+        <div class="flex justify-between"><span>Standard Shipping:</span><span id="cart-shipping" class="font-semibold text-stone-900">₨ 0</span></div>
+        <div class="flex justify-between text-sm font-bold text-stone-900 pt-1 border-t border-stone-200"><span>Total:</span><span id="cart-total">₨ 0</span></div>
+      </div>
+
+      <!-- Checkout Actions -->
+      <div class="space-y-2 pt-2">
+        <button 
+          id="proceed-checkout-btn" 
+          class="w-full bg-stone-900 hover:bg-rose-600 text-white py-3 rounded-xl text-xs font-bold tracking-wide transition shadow-sm flex items-center justify-center gap-2"
+        >
+          <span>Proceed to Checkout</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+
+        <button 
+          id="whatsapp-checkout-btn"
+          onclick="sendCartViaWhatsApp()" 
+          class="w-full border border-emerald-500 hover:bg-emerald-50 text-emerald-700 py-3 rounded-xl text-xs font-bold tracking-wide transition flex items-center justify-center gap-2"
+        >
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+          <span>Fast Order via WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Quick View Modal -->
+  <div id="quick-view-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button id="close-quick-view-btn" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 p-2 rounded-full hover:bg-stone-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="quick-view-content">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 13. Checkout Modal -->
+  <div id="checkout-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+    <div id="checkout-container" class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button id="close-checkout-btn" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 p-2 rounded-full hover:bg-stone-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xl">🛍️</span>
+          <h3 class="text-2xl font-bold font-serif-craft text-stone-900">Delivery Details</h3>
+        </div>
+        <p class="text-xs text-stone-400 mb-6">Enter your address for express delivery across Pakistan.</p>
+
+        <!-- Order Items Preview -->
+        <div class="bg-stone-50 rounded-2xl p-3.5 mb-6 border border-stone-200/80">
+          <p class="text-[11px] font-bold uppercase text-stone-400 tracking-wider mb-2">Order Summary</p>
+          <div id="checkout-order-summary" class="max-h-28 overflow-y-auto space-y-1"></div>
+          <div class="pt-2 mt-2 border-t border-stone-200 flex justify-between text-xs font-bold text-stone-900">
+            <span>Total Payable:</span>
+            <span id="checkout-total-amount">₨ 0</span>
+          </div>
+        </div>
+
+        <form id="checkout-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1">Full Name *</label>
+            <input type="text" name="customer_name" required placeholder="Sara Tariq" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-stone-700 mb-1">WhatsApp / Phone *</label>
+              <input type="tel" name="customer_phone" required placeholder="0300 1234567" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-stone-700 mb-1">City *</label>
+              <select name="customer_city" required class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500 font-medium text-stone-700">
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Multan">Multan</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Gujranwala">Gujranwala</option>
+                <option value="Other City">Other Pakistan City</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1">Complete Delivery Address *</label>
+            <textarea name="customer_address" rows="2" required placeholder="House #, Street #, Sector / Area name" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-rose-500"></textarea>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1">Payment Method *</label>
+            <div class="space-y-2 text-xs">
+              <label class="flex items-center gap-2 p-3 rounded-xl border border-stone-200 hover:border-rose-300 cursor-pointer bg-stone-50">
+                <input type="radio" name="payment_method" value="Cash on Delivery (COD)" checked class="text-rose-600 focus:ring-rose-500" />
+                <span class="font-semibold text-stone-800">Cash on Delivery (COD)</span>
+                <span class="text-[11px] text-stone-400 ml-auto">Pay when received</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-xl border border-stone-200 hover:border-rose-300 cursor-pointer">
+                <input type="radio" name="payment_method" value="JazzCash / EasyPaisa / Raast" class="text-rose-600 focus:ring-rose-500" />
+                <span class="font-semibold text-stone-800">JazzCash / EasyPaisa / Raast</span>
+                <span class="text-[11px] text-stone-400 ml-auto">Instant transfer</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-xl border border-stone-200 hover:border-rose-300 cursor-pointer">
+                <input type="radio" name="payment_method" value="Direct Bank Transfer" class="text-rose-600 focus:ring-rose-500" />
+                <span class="font-semibold text-stone-800">Bank Transfer</span>
+                <span class="text-[11px] text-stone-400 ml-auto">Meezan / HBL / Alfalah</span>
+              </label>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full mt-4 py-3.5 px-6 rounded-xl bg-stone-900 hover:bg-rose-600 text-white font-bold text-xs tracking-wide transition shadow-sm"
+          >
+            Confirm & Place Order 🛍️
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 14. Toast Container -->
+  <div id="toast-container" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2 max-w-sm"></div>
+
+  <!-- 15. Floating WhatsApp Button -->
+  <a 
+    href="https://wa.me/923001234567?text=Salam%20Woolen%20Crafts%20PK!%20I%20have%20an%20inquiry%20regarding%20your%20crochet%20products." 
+    target="_blank" 
+    class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition flex items-center justify-center group"
+    title="Chat with us on WhatsApp"
+  >
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-semibold px-0 group-hover:px-2">
+      WhatsApp Us
+    </span>
+  </a>
+
+  <!-- Helper for Category Card Click -->
+  <script>
+    function selectCategoryFilter(cat) {
+      const btn = document.querySelector(`.category-filter-btn[data-category="${cat}"]`);
+      if (btn) btn.click();
+      const shopEl = document.getElementById('shop');
+      if (shopEl) shopEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
